@@ -17,9 +17,8 @@ import {styles} from "./style";
 import { Guilds } from "../Guilds";
 import { GuildProps } from "../../components/Guild";
 
-
 export function AppointmentCreate(){
-    const [category, setCategory] = useState('')
+    const [category, setCategory] = useState('1');
 
 
     const [openGuildModal, setopenGuildModal] = useState(false);
@@ -27,6 +26,10 @@ export function AppointmentCreate(){
 
     function handleOpenGuilds(){
         setopenGuildModal(true);
+    }
+
+    function handleCloseModeal(){
+        setopenGuildModal(false);
     }
 
     function handleGuildSelect(guildSelect: GuildProps){
@@ -148,7 +151,7 @@ export function AppointmentCreate(){
             </Background>
             </ScrollView>
             
-            <ModalView visible={openGuildModal}>
+            <ModalView visible={openGuildModal} closeModal={handleCloseModeal}>
                     <Guilds handleGuildSelect={handleGuildSelect}/>
             </ModalView>
         </KeyboardAvoidingView>
