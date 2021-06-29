@@ -7,4 +7,13 @@ export const styles = StyleSheet.create({
         borderRadius: 8,
         marginRight: 20
     },
+    container:{
+        width: 64,
+        height: 64,
+        marginRight: 20,
+        backgroundColor: '#7298DA',
+        alignItems:'center',
+        justifyContent:'center',
+        overflow:'hidden'
+    }
 })
