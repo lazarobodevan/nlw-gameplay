@@ -20,7 +20,7 @@ and fill it. Do not add "" nor ;
 Just the raw info :)
 
 Then, execute the command
-
+```
 expo start
-
+```
 and you're done!
